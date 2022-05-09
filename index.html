@@ -16,9 +16,220 @@
 
 </head>
 
+
 <body>
-  <div class="bg-red-600">
-    Hello world from My Arc
+  <!-- component -->
+  <!-- This is an example component -->
+  <div x-data="{ open: false }">
+    <div class='w-screen h-screen bg-gradient-to-br from-indigo-500 to-indigo-800 flex relative'>
+      <div
+        class="absolute left-0 top-0 transform -translate-x-full md:translate-x-0 transition ease-out bg-gray-500/50  md:bg-transparent md:relative w-full md:w-3/12  h-full  overflow-y-auto flex"
+        :class="{ 'translate-x-0': open }">
+        <div class="w-10/12 md:w-full h-full p-4 md:p-6 lg:p-8 bg-indigo-500 md:bg-transparent overflow-y-auto">
+          <!-- component -->
+
+          <div class="card">
+            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto"
+              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+              alt="product designer">
+            <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> Afoudo Richard </h1>
+            <h3 class="text-sm md:text-xl lg:text-2xl text-gray-400 "> (Mr.Arc) </h3>
+            <h3 class="text-sm md:text-lg lg:text-xl text-gray-400 "> Software Engineer </h3>
+            <button
+              class="bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Hire
+              Me</button>
+          </div>
+
+          <div class="card">
+
+
+            <div class="">
+
+
+              <ul class="relative">
+
+                <li class="p-2 bg-gray-300 rounded-2xl mb-2">
+                  <a class="nav-link" href="#">
+                    <span>
+                      <i class="lni lni-home"></i>
+                    </span>
+                    <span class="ml-4">
+                      Home
+                    </span>
+                  </a>
+                </li>
+
+                <li class="p-2 hover:bg-gray-300 rounded-2xl mb-2">
+                  <a class="nav-link" href="#">
+                    <span>
+                      <i class="lni lni-home"></i>
+                    </span>
+                    <span class="ml-4">
+                      About
+                    </span>
+                  </a>
+                </li>
+                <li class="p-2 rounded-2xl mb-2">
+                  <a class="nav-link" href="#">
+                    <span>
+                      <i class="lni lni-home"></i>
+                    </span>
+                    <span class="ml-4">
+                      Services
+                    </span>
+                  </a>
+                </li>
+
+                <li class="p-2 rounded-2xl mb-2">
+                  <a class="nav-link" href="#">
+                    <span>
+                      <i class="lni lni-home"></i>
+                    </span>
+                    <span class="ml-4">
+                      Skills
+                    </span>
+                  </a>
+                </li>
+                <li class="p-2 rounded-2xl mb-2">
+                  <a class="nav-link" href="#">
+                    <span>
+                      <i class="lni lni-home"></i>
+                    </span>
+                    <span class="ml-4">
+                      Resume | CV
+                    </span>
+                  </a>
+                </li>
+                <li class="p-2 rounded-2xl mb-2">
+                  <a class="nav-link" href="#">
+                    <span>
+                      <i class="lni lni-home"></i>
+                    </span>
+                    <span class="ml-4">
+                      Contact
+                    </span>
+                  </a>
+                </li>
+
+
+              </ul>
+
+
+            </div>
+          </div>
+
+          <div class="card">
+
+            <h1 class="text-sm md:text-lg lg:text-xl text-gray-700 "> Designed With Love ❤ By Mr.Arc </h1>
+
+          </div>
+
+        </div>
+        <div class="w-2/12 md:hidden flex justify-center items-center" @click="open = false">
+          <span class="text-5xl text-white">
+            <i class="lni lni-cross-circle"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="w-9/12 space-y-2 overflow-y-auto">
+        <div class="h-full flex flex-col justify-end items-center bg-fixed bg-no-repeat bg-cover relative"
+          style="background-image: url('https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80')">
+          <div class="absolute inset-0 bg-black/30"></div>
+          <div class="flex flex-col items-center justify-center">
+
+            <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> Hi I am </h1>
+            <h1 class="text-lg md:text-2xl lg:text-3xl text-indigo-500"> Afoudo Richard </h1>
+            <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> you can call me </h1>
+            <h3 class="text-sm md:text-xl lg:text-2xl text-indigo-500 "> Mr.Arc</h3>
+            <h3 class="text-sm md:text-lg lg:text-xl text-gray-400 "> Software Engineer </h3>
+          </div>
+        </div>
+
+        <div class="p-4 md:p-6 lg:p-8">
+          <div class="card mt-3">
+            <div class="flex flex-col items-center">
+              <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> My Services </h1>
+              <div class="w-20 h-1 bg-indigo-500 mt-1"></div>
+            </div>
+            <!-- Services body -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div class="col-span-1">
+                <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+                  <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-purple-900">Web Design</h3>
+                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur
+                      ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
+                    <a href="#" class="block font-medium text-purple-600">Know more</a>
+                  </div>
+                  <img src="https://tailus.io/sources/blocks/end-image/preview/images/ui-design.svg"
+                    class="w-2/3 ml-auto" alt="illustration" loading="lazy" width="900" height="600">
+                </div>
+              </div>
+
+              <div class="col-span-1">
+                <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+                  <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-purple-900">Web Design</h3>
+                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur
+                      ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
+                    <a href="#" class="block font-medium text-purple-600">Know more</a>
+                  </div>
+                  <img src="https://tailus.io/sources/blocks/end-image/preview/images/ui-design.svg"
+                    class="w-2/3 ml-auto" alt="illustration" loading="lazy" width="900" height="600">
+                </div>
+              </div>
+              <div class="col-span-1">
+                <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+                  <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-purple-900">Web Design</h3>
+                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur
+                      ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
+                    <a href="#" class="block font-medium text-purple-600">Know more</a>
+                  </div>
+                  <img src="https://tailus.io/sources/blocks/end-image/preview/images/ui-design.svg"
+                    class="w-2/3 ml-auto" alt="illustration" loading="lazy" width="900" height="600">
+                </div>
+              </div>
+              <div class="col-span-1">
+                <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+                  <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-purple-900">Web Design</h3>
+                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur
+                      ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
+                    <a href="#" class="block font-medium text-purple-600">Know more</a>
+                  </div>
+                  <img src="https://tailus.io/sources/blocks/end-image/preview/images/ui-design.svg"
+                    class="w-2/3 ml-auto" alt="illustration" loading="lazy" width="900" height="600">
+                </div>
+              </div>
+              <div class="col-span-1">
+                <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+                  <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-purple-900">Web Design</h3>
+                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur
+                      ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
+                    <a href="#" class="block font-medium text-purple-600">Know more</a>
+                  </div>
+                  <img src="https://tailus.io/sources/blocks/end-image/preview/images/ui-design.svg"
+                    class="w-2/3 ml-auto" alt="illustration" loading="lazy" width="900" height="600">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming skills -->
+          <div class="card mt-3">
+            <div class="flex flex-col items-center">
+              <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> My Skills </h1>
+              <div class="w-20 h-1 bg-indigo-500 mt-1"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
