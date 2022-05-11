@@ -25,7 +25,7 @@
 </head>
 
 
-<body class="font-montserrat">
+<body class="scroll-smooth font-montserrat">
   <!-- component -->
   <!-- This is an example component -->
   <div x-data="{ open: false }">
@@ -36,6 +36,9 @@
         <i class="lni lni-text-align-justify"></i>
       </span>
     </div>
+
+    <!-- Link to download CV -->
+    <a href="/src/assets/pdf/13Secrets.pdf" class="fixed bottom-5 right-5 p-2 border-2 border-indigo-500 bg-white text-indigo-600 rounded-lg z-40" download="Afoudo Richard CV">Download CV</a>
     <div class='w-screen h-screen bg-gradient-to-br from-indigo-500 to-indigo-800 flex relative'>
       <div
         class="absolute left-0 top-0 z-40 transform -translate-x-full md:translate-x-0 transition ease-out bg-gray-500/50  md:bg-transparent md:relative w-full md:w-3/12  h-full  overflow-y-auto flex"
@@ -89,7 +92,7 @@
                   </a>
                 </li>
                 <li class="p-2 rounded-2xl mb-2">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="#services">
                     <span>
                       <i class="lni lni-home"></i>
                     </span>
@@ -100,7 +103,7 @@
                 </li>
 
                 <li class="p-2 rounded-2xl mb-2">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="#skills">
                     <span>
                       <i class="lni lni-home"></i>
                     </span>
@@ -120,7 +123,7 @@
                   </a>
                 </li>
                 <li class="p-2 rounded-2xl mb-2">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="#contact">
                     <span>
                       <i class="lni lni-home"></i>
                     </span>
@@ -151,7 +154,7 @@
         </div>
       </div>
 
-      <div class="w-full md:w-9/12 space-y-2 overflow-y-auto">
+      <div class="w-full md:w-9/12 space-y-2 overflow-y-auto scroll-smooth">
         <div
           class="h-full flex flex-col justify-start md:justify-center items-start bg-right-bottom bg-no-repeat bg-50% md:bg-20% lg:bg-25% relative"
           style="background-image: url('/src/assets/images/richard-afoudo-2.png')">
@@ -167,7 +170,7 @@
         </div>
 
         <div class="p-4 md:p-6 lg:p-8">
-          <div class="card mt-3">
+          <div class="card mt-3" id="services">
             <div class="flex flex-col items-center mb-3 md:mb-6">
               <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> My Services </h1>
               <div class="w-20 h-1 bg-indigo-500 mt-1"></div>
@@ -256,7 +259,7 @@
           </div>
 
           <!-- Programming skills -->
-          <div class="card bg-gray-200 mt-3">
+          <div class="card bg-gray-200 mt-3" id="skills" >
             <div class="flex flex-col items-center">
               <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> My Skills </h1>
               <div class="w-20 h-1 bg-indigo-500 mt-1"></div>
@@ -264,7 +267,7 @@
 
           </div>
 
-          <div class="card mt-3 flex flex-col items-center">
+          <div class="card mt-3 flex flex-col items-center" id="contact">
             <div class="flex flex-col items-center mb-3">
               <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> Contact Me </h1>
               <div class="w-20 h-1 bg-indigo-500 mt-1"></div>
