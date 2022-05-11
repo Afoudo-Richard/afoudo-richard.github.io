@@ -14,30 +14,45 @@
   <!-- <link href="/dist/output.css" rel="stylesheet"> -->
   <link href="/dist/output.css" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 
-<body>
+<body class="font-montserrat">
   <!-- component -->
   <!-- This is an example component -->
   <div x-data="{ open: false }">
+
+    <div x-show="open == false" @click="open = true" class="md:hidden fixed top-5 right-5 p-2 bg-white text-indigo-600 rounded-lg z-40">
+      <span class="text-2xl">
+        <i class="lni lni-text-align-justify"></i>
+      </span>
+    </div>
     <div class='w-screen h-screen bg-gradient-to-br from-indigo-500 to-indigo-800 flex relative'>
       <div
-        class="absolute left-0 top-0 transform -translate-x-full md:translate-x-0 transition ease-out bg-gray-500/50  md:bg-transparent md:relative w-full md:w-3/12  h-full  overflow-y-auto flex"
+        class="absolute left-0 top-0 z-40 transform -translate-x-full md:translate-x-0 transition ease-out bg-gray-500/50  md:bg-transparent md:relative w-full md:w-3/12  h-full  overflow-y-auto flex"
         :class="{ 'translate-x-0': open }">
         <div class="w-10/12 md:w-full h-full p-4 md:p-6 lg:p-8 bg-indigo-500 md:bg-transparent overflow-y-auto">
           <!-- component -->
 
           <div class="card">
-            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto"
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-              alt="product designer">
+            <div class="mb-3 w-36 h-36 rounded-full shadow-lg mx-auto bg-no-repeat bg-cover"
+              style="background-image: url('/src/assets/images/richard-afoudo.png')">
+
+            </div>
+
             <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> Afoudo Richard </h1>
             <h3 class="text-sm md:text-xl lg:text-2xl text-gray-400 "> (Mr.Arc) </h3>
             <h3 class="text-sm md:text-lg lg:text-xl text-gray-400 "> Software Engineer </h3>
-            <button
-              class="bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Hire
-              Me</button>
+
+            <a
+              class="inline-block bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Contact
+              Me</a>
+
           </div>
 
           <div class="card">
@@ -132,17 +147,17 @@
         </div>
       </div>
 
-      <div class="w-9/12 space-y-2 overflow-y-auto">
-        <div class="h-full flex flex-col justify-end items-center bg-fixed bg-no-repeat bg-cover relative"
-          style="background-image: url('https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80')">
-          <div class="absolute inset-0 bg-black/30"></div>
-          <div class="flex flex-col items-center justify-center">
+      <div class="w-full md:w-9/12 space-y-2 overflow-y-auto">
+        <div class="h-full flex flex-col justify-center items-start bg-right-bottom bg-no-repeat bg relative"
+          style="background-image: url('/src/assets/images/richard-afoudo-2.png')">
+          <div class="absolute inset-0 bg-black/30 z-30 lg:hidden"></div>
+          <div class="flex flex-col items-start justify-start pl-3 md:pl-6">
 
-            <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> Hi I am </h1>
-            <h1 class="text-lg md:text-2xl lg:text-3xl text-indigo-500"> Afoudo Richard </h1>
-            <h1 class="text-lg md:text-2xl lg:text-3xl text-gray-700"> you can call me </h1>
-            <h3 class="text-sm md:text-xl lg:text-2xl text-indigo-500 "> Mr.Arc</h3>
-            <h3 class="text-sm md:text-lg lg:text-xl text-gray-400 "> Software Engineer </h3>
+            <h1 class="text-3xl sm:text-4xl md:text-2xl lg:text-5xl text-gray-700 font-medium leading-8 md:leading-10"> Hi,<br>I am <span
+                class="text-indigo-500"><br>Afoudo
+                Richard</span> <br> you can call me <br> <span class="text-indigo-500">Mr.Arc,</span><br>Software
+              Engineer
+            </h1>
           </div>
         </div>
 
