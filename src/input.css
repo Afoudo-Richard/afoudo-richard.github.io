@@ -14,7 +14,7 @@
     }
 
     .card {
-        @apply bg-white text-center rounded-3xl border shadow-lg p-4 md:p-7 mb-3
+        @apply bg-white text-center rounded-3xl border shadow-lg p-4 md:p-3 lg:p-4 mb-3
     }
     .nav-link{
         @apply w-full flex items-center text-sm md:text-xl lg:text-xl
